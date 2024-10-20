@@ -1,0 +1,219 @@
+
+    /* General Styles */
+    body {
+        font-family:poppins;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1, h2 {
+        font-weight: 600;
+    }
+
+    p {
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    .display-4{
+        color: #343a40;
+    }
+
+    .lead{
+        color: brown;
+    }
+
+    #mul{
+        text-decoration: underline;
+    }
+
+    /* Header Styles */
+    header {
+        background-color: #343a40; /* Dark background */
+        padding: 10px 0;
+        width: 100%; /* Reduce the width of the header */
+        margin: 0 auto; /* Center the header */
+        position: sticky; /* Keep the header sticky */
+        top: 0;
+        z-index: 999;
+    }
+
+    header .logo img {
+        height: 40px;
+    }
+
+    header .nav-link {
+        color: rgb(255, 255, 255);
+        margin-right: 15px;
+        transition: color 0.3s ease, background-color 0.3s ease; /* Transition for color and background */
+        padding: 8px 15px; /* Add some padding */
+        border-radius: 5px; /* Slight rounding for the background */
+    }
+    .name::first-letter {
+        color: red; /* Change the color of the first letter to red */
+        font-size: 1.5em; /* Optionally, you can make the first letter larger */
+        font-weight: bold; /* Optionally, make the first letter bold */
+    }
+
+
+    /* Dropdown Menu - Hover Effect */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        animation: dropdownFadeIn 0.5s ease-in-out; /* Animation for dropdown */
+    }
+
+    /* Dropdown Menu Styles */
+    .dropdown-menu {
+        background-color: #818181; /* Set background for dropdown */
+        display: none; /* Initially hidden */
+        animation: dropdownFadeIn 0.5s ease-in-out; /* Animation for dropdown */
+        position: absolute; /* Ensure it positions correctly */
+        z-index: 1000; /* Ensure it is above other content */
+    }
+
+    /* Optional: Change the background color of the nav-link on hover */
+    header .nav-link:hover {
+        background-color:#dc3545; /* Light red background on hover */
+        color: #ffffff; /* Change text color on hover */
+    }
+
+    .display-4::first-letter{
+        color: #dc3545;
+
+    }
+
+    /* Hero Section Styles */
+    section {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    section.bg-dark {
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+
+    section h1 {
+        color: white;
+        font-size: 48px;
+    }
+
+    section p.lead {
+        color: #d3d3d3;
+    }
+
+    /* About Section */
+    .about-section, .solar-section, .custom-fabrications-section {
+        padding: 50px 0;
+    }
+
+    .about-section h2, .solar-section h2, .custom-fabrications-section h2 {
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+
+    .about-section img, .roofing-section img, .solar-section img, .custom-fabrications-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    /* Section Styles */
+    .roofing-section, .conveyor-section, .custom-fabrications-section {
+        padding: 50px 0;
+    }
+
+    section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+    }
+
+    footer h6 {
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    footer .social-links img {
+        width: 30px;
+        margin-right: 15px;
+        border-radius: 50%;
+        transition: opacity 0.3s ease;
+    }
+
+    footer .social-links img:hover {
+        opacity: 0.7; /* Slight transparency on hover */
+    }
+
+    .resources-section {
+        background-color: #ffffff; /* Light background */
+    }
+
+    .resources-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .resources-section li {
+        margin: 10px 0;
+    }
+
+    .resources-section a {
+        color: #343a40; /* Dark text color */
+        text-decoration: none;
+    }
+
+    .resources-section a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+
+
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        header {
+            width: 100%;
+            padding: 10px;
+            border-radius: 0;
+        }
+
+        header .nav {
+            justify-content: center;
+        }
+
+        section h1 {
+            font-size: 36px;
+        }
+
+        section h2 {
+            font-size: 28px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    }
+
+
+
+
+
+
+
+
+    

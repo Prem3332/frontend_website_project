@@ -1,0 +1,117 @@
+
+header {
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    display: flex;
+    align-items: center;
+}
+
+.blur-strip {
+    background: rgba(66, 62, 62, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dc3545;
+}
+
+.dropdown-menu {
+    background-color: #47515b;
+}
+
+ /* Additional styles to remove spacing */
+ .carousel {
+    margin: 0; /* Remove margin */
+}
+main {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 0; /* Align text to the left */
+    transform: translateY(-50%); /* Center text vertically */
+    color: #fff; /* Change text color */
+    text-align: left; /* Align text to the left */
+}
+
+#sentence {
+    color: #000000;
+    margin-left: 50px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#sentence::first-letter{
+    color: #dc3545;
+}
+
+/* Slider Image Styles */
+#slide1 {
+    opacity: 40%;
+    height: auto; /* Adjust height to auto for responsiveness */
+    max-height: 500px; /* Set a maximum height */
+}
+
+/* Carousel Caption Styles */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        height: 150px; /* Reduce header height on smaller screens */
+    }
+
+    #slide1 {
+        max-width: 100%; /* Full width on smaller screens */
+        height: auto; /* Ensure height auto for responsiveness */
+    }
+
+    .blur-strip {
+        padding: 5px; /* Less padding on smaller screens */
+    }
+
+    #name {
+        font-size: 28px; /* Smaller font size on smaller screens */
+    }
+
+    /* Always show dropdown menu for small screens */
+    .navbar-nav .dropdown-menu {
+        display: block !important; /* Show the dropdown items */
+        position: static; /* Change position to static for better layout */
+    }
+
+    .navbar-nav .dropdown {
+        position: relative; /* Make dropdown relative */
+    }
+}
+
+@media (max-width: 576px) {
+    #name {
+        font-size: 24px; /* Even smaller font size for extra small screens */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Align toggler button to the right */
+    }
+}
+
+
+

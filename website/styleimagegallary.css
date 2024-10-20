@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* Header Styles */
+header {
+    background-color: #343a40; /* Dark background */
+    padding: 10px 0;
+    width: 100%; /* Reduce the width of the header */
+    margin: 0 auto; /* Center the header */
+    position: sticky; /* Keep the header sticky */
+    top: 0;
+    z-index: 999;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .nav-link {
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transition for color and background */
+    padding: 8px 15px; /* Add some padding */
+    border-radius: 5px; /* Slight rounding for the background */
+}
+
+/* Dropdown Menu - Hover Effect */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: dropdownFadeIn 0.5s ease-in-out; /* Animation for dropdown */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    background-color: #818181; /* Set background for dropdown */
+    display: none; /* Initially hidden */
+    animation: dropdownFadeIn 0.5s ease-in-out; /* Animation for dropdown */
+    position: absolute; /* Ensure it positions correctly */
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Optional: Change the background color of the nav-link on hover */
+header .nav-link:hover {
+    background-color:#dc3545; /* Light red background on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+#resourcesDropdown{
+    text-decoration: underline;
+}
+
+/* Dropdown Menu Hover Effect */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: dropdownFadeIn 0.5s ease-in-out;
+}
+
+.dropdown-menu {
+    background-color: #818181;
+    display: none;
+    animation: dropdownFadeIn 0.5s ease-in-out;
+}
+
+/* Hero Section Styles */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.display-4::first-letter{
+    color: #dc3545;
+}
+
+/* Card Styles */
+.gallery-section .gallery-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    overflow: hidden;
+    border-radius: 10px; /* Optional rounding */
+
+}
+
+.gallery-section .gallery-card img {
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+
+.gallery-section .gallery-card .card-body {
+    display: none; /* Hide information below image by default */
+    transition: opacity 0.3s ease;
+
+}
+
+.gallery-section .gallery-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    border: 3px solid #6b614f; /* Add colored border on hover */
+    background-color: #c9bebf;
+
+}
+
+.gallery-section .gallery-card:hover img {
+    transform: scale(1.1); /* Slightly zoom image on hover */
+
+}
+
+.gallery-section .gallery-card:hover .card-body {
+    display: block; /* Show additional information when hovering */
+    opacity: 1;
+
+}
+
+/* Card Title and Text */
+.gallery-section .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #dc3545;
+}
+
+.gallery-section .card-text {
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery-section .gallery-card {
+        margin-bottom: 20px;
+    }
+
+    .gallery-section .gallery-card img {
+        height: 200px;
+    }
+}
+
+
+/* Footer and Other Styles Remain the Same */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header .nav {
+        justify-content: center;
+    }
+
+    section h1 {
+        font-size: 36px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
